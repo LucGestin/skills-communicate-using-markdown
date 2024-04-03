@@ -22,3 +22,13 @@ And now back to [the first link][another place].
 
 I read this interesting quote the other day:
 > "Her eyes had called him and his soul had leaped at the call. To live, to err, to fall, to triumph, to recreate life out of life!"
+> 
+A list of cooking elements :
+* Milk
+  * Eggs
+* Salmon
+  * Butter
+
+1. Cut the cheese
+2. Slice the tomatoes,
+3. Rub the tomatoes in flour

@@ -32,3 +32,24 @@ A list of cooking elements :
 1. Cut the cheese
 2. Slice the tomatoes,
 3. Rub the tomatoes in flour
+
+# Python
+
+**int()**, which turns things into ints
+**float()**, which turns things into floats
+**bool()**, which turns things into bools.
+
+**or** used in an expression : The Python docs describe it as **if x is false, then y, else x**
+> print(0 or 1) ## 1
+
+**and** : The Python docs describe it as **if x is false, then x, else y**
+> print(0 and 1) ## 0
+
+
+**is**, the identity operator, is used to compare two objects and returns true if both are the same object.
+> def is_adult(age):
+>return True if age > 18 else False
+>
+> ``` python
+string = "Hello, world!"
+```

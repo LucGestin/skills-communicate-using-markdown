@@ -45,18 +45,16 @@ A task list :
 **bool()**, which turns things into bools.
 
 **or** used in an expression : The Python docs describe it as **if x is false, then y, else x**
-> print(0 or 1) ## 1
 
 **and** : The Python docs describe it as **if x is false, then x, else y**
-> print(0 and 1) ## 0
-
-
+```
+print(0 or 1) ## 1
+print(0 and 1) ## 0
+```
 **is**, the identity operator, is used to compare two objects and returns true if both are the same object.
 ```python
 def is_adult(age):
    return True if age > 18 else False
-
-string = "Hello, world!"
 ```
 
 **Complex numbers** : you can get its real and imaginary part:
@@ -129,7 +127,7 @@ while i < 10:
 squares = [n**2 for n in range(10)]
 ```
 
-*Help** function and **docstrings**
+**Help** function and **docstrings**
 ```
 def least_difference(a, b, c): 
 # Return the smallest difference between any two numbers among a, b and c.
@@ -143,9 +141,10 @@ help (least_difference)
 ```
 
 **External libraries**
->from math import log, pi
+```
+from math import log, pi
 from numpy import asarray
-
->type(rolls)
->dir()
->help()
+type(rolls)
+dir()
+help()
+```

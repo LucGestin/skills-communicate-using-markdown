@@ -33,6 +33,11 @@ A list of cooking elements :
 2. Slice the tomatoes,
 3. Rub the tomatoes in flour
 
+A task list :
+- [x] Turn on GitHub Pages
+- [ ] Outline my portfolio
+- [ ] Introduce myself to the world
+
 # Python
 
 **int()**, which turns things into ints
@@ -47,9 +52,9 @@ A list of cooking elements :
 
 
 **is**, the identity operator, is used to compare two objects and returns true if both are the same object.
-> def is_adult(age):
->return True if age > 18 else False
->
-> ``` python
+````python
+def is_adult(age):
+   return True if age > 18 else False
+
 string = "Hello, world!"
 ```

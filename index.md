@@ -148,3 +148,17 @@ type(rolls)
 dir()
 help()
 ```
+
+**Linear Algebra**
+
+i-hat and j-hat are the basic vectors of the xy coordinate system
+
+the span of vector v and w is the set of all their possible linear combinations : av + bw
+
+linear dependent 
+vector u = av + bw
+
+linear independent
+vector u <> av + bw
+
+the basis of a vector space is a set of linear independeng vectors that span the full space

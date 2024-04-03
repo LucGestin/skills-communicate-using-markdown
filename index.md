@@ -52,9 +52,100 @@ A task list :
 
 
 **is**, the identity operator, is used to compare two objects and returns true if both are the same object.
-````python
+```python
 def is_adult(age):
    return True if age > 18 else False
 
 string = "Hello, world!"
 ```
+
+**Complex numbers** : you can get its real and imaginary part:
+```
+complexNumber.real #2.0
+complexNumber.imag #3.0  
+```
+**Enums**
+```
+class State(Enum):
+INACTIVE = 0
+ACTIVE = 1
+```
+**Lists**, a list can contain a mix of different types of variable
+```
+dogs = ["Roger", "Syd"]
+```
+the **list.append** method modifies a list by adding an item to the end
+
+the **list.pop** method removes and returns the last element of a list
+
+the **list.index** method returns its index.
+
+
+**Tuples**, immuable group of objects, often used for functions that have multiple return values.
+```
+names = ("Roger", "Syd")
+```
+
+**Sets**, like Tuples but they are not ordered and they are mutable.
+```
+set1 = {"Roger", "Syd"}
+set2 = {"Roger"}
+intersect = set1 & set2 #{'Roger'}
+union = set1 | set2
+difference = set1 - set2 #{'Syd'}
+isSuperset = set1 > set2 # True
+```
+**Strings** are sequence of characters
+```
+claims = 'pluto is a planet!'
+words = claims.split
+' 👏 '.join([word.upper() for word in words]) 
+the output is 'PLUTO 👏 IS 👏 A 👏 PLANET!'
+"{}, you'll always be the {}th planet to me.".format(planet, position)
+```
+
+**Dictionnaries**, to create collections of key / value pairs.
+```
+dog = { 'name': 'Roger', 'age': 8 }
+```
+
+**Objects** : If the object provides methods to change its content, then it's mutable. Otherwise it's immutable.
+
+**For** loops
+```
+for i in range(5):
+    print("Doing important work. i =", i)
+```
+**While** loops
+```
+i = 0
+while i < 10:
+   print(i, end=' ')
+   i += 1 # increase the value of i by 1
+```
+
+**List comprehension**
+```
+squares = [n**2 for n in range(10)]
+```
+
+*Help** function and **docstrings**
+```
+def least_difference(a, b, c): 
+# Return the smallest difference between any two numbers among a, b and c.
+# least_difference(1, 5, -5) returns 4
+    diff1 = abs(a - b)
+    diff2 = abs(b - c)
+    diff3 = abs(a - c)
+    return min(diff1, diff2, diff3)
+
+help (least_difference)
+```
+
+**External libraries**
+>from math import log, pi
+from numpy import asarray
+
+>type(rolls)
+>dir()
+>help()

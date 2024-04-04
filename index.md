@@ -160,15 +160,27 @@ linear dependent vector $\vec{u}$ = a $\vec{v}$ + b $\vec{w}$
 
 linear independent vector $\vec{u}$ != a $\vec{v}$ + b $\vec{w}$
 
-the basis of a vector space is a set of linear independengt vectors that span the full space
+the basis of a vector space is a set of linear independent vectors that span the full space
 
+Linear transformation
+
+$\vec{v}$ = -1 $\vec{i}$ + 2 $\vec{j}$
+
+Transformed $\vec{v}$ = -1 (Transformed $\vec{i}$ ) + 2 (Transformed $\vec{j}$ )
 
 $$\begin{bmatrix}
-       5 & 1 & 0 \\
-       6 & 0 & 1 \\
-       0 & 5 & 6
+       a & c \\
+       b & d
      \end{bmatrix}$$
-     
+
+$$\begin{bmatrix}
+       x \\
+       y
+     \end{bmatrix}$$
+
+a,b the place where the 1rst basis vector lands and c,d the place where the 2nd basis vector lands.
+
+matrix vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 
 $$\(\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}\)$$

@@ -1,3 +1,4 @@
+
 # Header 1
 ## Header 2
 ### Header 3
@@ -151,14 +152,30 @@ help()
 
 **Linear Algebra**
 
-i-hat and j-hat are the basic vectors of the xy coordinate system
+$\hat{i}$ and $\hat{j}$ are the basic vectors of the xy coordinate system
 
-the span of vector v and w is the set of all their possible linear combinations : av + bw
+the span of vector $\vec{v}$ and vector $\vec{w}$ is the set of all their possible linear combinations : a $\vec{v}$ + b $\vec{w}$
 
-linear dependent 
-vector u = av + bw
+linear dependent vector $\vec{u}$ = a $\vec{v}$ + b $\vec{w}$
 
-linear independent
-vector u <> av + bw
+linear independent vector $\vec{u}$ != a $\vec{v}$ + b $\vec{w}$
 
-the basis of a vector space is a set of linear independeng vectors that span the full space
+the basis of a vector space is a set of linear independengt vectors that span the full space
+
+
+$$\begin{bmatrix}
+       5 & 1 & 0 \\
+       6 & 0 & 1 \\
+       0 & 5 & 6
+     \end{bmatrix}$$
+     
+$$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
+
+$$\(\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}\)$$
+
+$$\(\vec{v} = (v_1, v_2, \ldots, v_n)\)$$
+
+$$\overrightarrow{AB}$$
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+

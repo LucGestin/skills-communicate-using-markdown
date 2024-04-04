@@ -162,7 +162,7 @@ linear independent vector $\vec{u}$ != a $\vec{v}$ + b $\vec{w}$
 
 the basis of a vector space is a set of linear independent vectors that span the full space
 
-Linear transformation
+Linear transformation: grids lines remain parallel and evenly spaced, and such that the orginin remains fixed.
 
 $\vec{v}$ = -1 $\vec{i}$ + 2 $\vec{j}$
 
@@ -178,9 +178,16 @@ $$\begin{bmatrix}
        y
      \end{bmatrix}$$
 
+$$\begin{bmatrix}
+       ax+cy \\
+       bx+dy
+\end{bmatrix}$$
+
 a,b the place where the 1rst basis vector lands and c,d the place where the 2nd basis vector lands.
 
-matrix vector multiplication 
+matrices are transformation of space.
+
+vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 
 $$\(\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}\)$$

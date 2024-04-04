@@ -187,6 +187,24 @@ a,b the place where the 1rst basis vector lands and c,d the place where the 2nd 
 
 matrices are transformation of space.
 
+Matrix multiplication
+
+$$\begin{bmatrix}
+       a & b \\
+       c & d
+     \end{bmatrix}$$
+
+$$\begin{bmatrix}
+       e & f \\
+       g & h
+     \end{bmatrix}$$
+
+$$\begin{bmatrix}
+       ae+bg & af+bh\\
+       ce+dg & cf+dh
+\end{bmatrix}$$
+
+
 vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 

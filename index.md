@@ -237,7 +237,39 @@ $$A \vec{x} = \vec{v} \\ \\  or \\ \\  \vec{x} = A^-1 \vec{v}$$
 when the rank equals the number of columns, we call the matrix **full rank**
 
 the set of vectors that land on the origin is called the **null space** or the **kernel** of your matrix
-     
+
+**non-square matrices** are transfomrations between dimesnions.
+
+the **dot product** of 2 vectors of the same dimension :
+
+$$\begin{bmatrix} 1 \\ 
+                  2 \end{bmatrix} \\ . \begin{bmatrix} 3 \\
+                                                          4 \end{bmatrix} \\ = 1.3 + 2.4 $$
+
+
+Formal linear properties :
+
+$L(\vec{v}+\vec{w})$ = $L(\vec{v}) + L(\vec{w})$
+
+$L(c\vec{v})$ = $cL(\vec{v})$
+
+Any time you have a 2d-to-1d linear transformation, applying that transformation is the same thing as taking a dot product with that vector.
+
+The dual of a vector is the linear transformation that it encodes  
+The dual of a linear transformation from some space to one-dimension is a vector in that space.
+
+Dotting 2 vectors together :
+
+$$\begin{bmatrix} x_1 \\ 
+                  y_1 \end{bmatrix} \\ . \begin{bmatrix} x_2 \\
+                                                         y_2 \end{bmatrix}$$ 
+                                                 
+                                                         is equivallent to 
+
+$$\begin{bmatrix} x_1 & y_1 \end{bmatrix} \\ \begin{bmatrix} x_2 \\
+y_2 \end{bmatrix} = x_1 . x_2 + y_1 . y_2$$
+
+
 vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 

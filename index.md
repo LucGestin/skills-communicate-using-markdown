@@ -152,7 +152,7 @@ help()
 
 **Linear Algebra**
 
-$\hat{i}$ and $\hat{j}$ are the basic vectors of the xy coordinate system
+$\hat{i}$ and $\hat{j}$ are the **basic vectors** of the xy coordinate system
 
 the span of vector $\vec{v}$ and vector $\vec{w}$ is the set of all their possible linear combinations : a $\vec{v}$ + b $\vec{w}$
 
@@ -204,7 +204,40 @@ $$\begin{bmatrix}
        ce+dg & cf+dh
 \end{bmatrix}$$
 
+matrix representing the 90° rotation transformation around $\vec{j}$ :
 
+$$\begin{bmatrix}
+       0 & 0 & 1 \\
+       0 & 1 & 0 \\
+      -1 & 0 & 0
+     \end{bmatrix}$$
+
+The factor by which a linear transformation changes any area, is called the **determinant** of that transformation. Whenever the orientation has been inverted, the determinant will be negative.
+
+$$det\left(\begin{bmatrix}
+       a & b \\
+       c & d
+     \end{bmatrix}\right) = ad-bc$$
+
+$$det\left(M1M2\right) = det\left(M1\right)det\left(M2\right)$$
+
+**A Inverse** times A equals the matrix of the transformation that doing nothing
+
+$$ A^-1 A = \begin{bmatrix}
+       1 & 0 \\
+       0 & 1
+     \end{bmatrix}$$
+
+$$A \vec{x} = \vec{v} \\ \\  or \\ \\  \vec{x} = A^-1 \vec{v}$$
+
+**rank** : number of dimensions in the output of the transformation
+
+**column space** of A: the set of all possible outputs for your matrix
+
+when the rank equals the number of columns, we call the matrix **full rank**
+
+the set of vectors that land on the origin is called the **null space** or the **kernel** of your matrix
+     
 vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 

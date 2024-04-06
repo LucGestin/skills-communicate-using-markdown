@@ -212,7 +212,7 @@ $$\begin{bmatrix}
       -1 & 0 & 0
      \end{bmatrix}$$
 
-The factor by which a linear transformation changes any area, is called the **determinant** of that transformation. Whenever the orientation has been inverted, the determinant will be negative.
+**The determinant** : the factor by which a linear transformation changes any area is called the **determinant** of that transformation. Whenever the orientation has been inverted, the determinant will be negative.
 
 $$det\left(\begin{bmatrix}
        a & b \\
@@ -269,7 +269,24 @@ $$\begin{bmatrix} x_1 \\
 $$\begin{bmatrix} x_1 & y_1 \end{bmatrix} \\ \begin{bmatrix} x_2 \\
 y_2 \end{bmatrix} = x_1 . x_2 + y_1 . y_2$$
 
+area of parallelogram : the **cross product** $\vec{v}$ X $\vec{w}$ is positive when $\vec{v}$ is on the right of $\vec{w}$ and negative when $\vec{v}$ is on the left of $\vec{w}$.
 
+
+$$ \vec{v} \\ X \\ \vec{w}  =  det (\begin{bmatrix}
+      -3 & 2 \\
+       1 & 1
+     \end{bmatrix}) = (-3).(1) - (1).(2) = -5 $$
+     
+     
+$$\begin{bmatrix} v_1 \\
+                  v_2 \\
+                  v_3 \end{bmatrix} X \begin{bmatrix} w_1 \\
+                                                      w_2 \\
+                                                      w_3 \end{bmatrix} =  det  \left(\begin{bmatrix} \hat{i} & v_1 & w_1 \\
+                                                                                                \hat{j} & v_2 & w_2 \\
+                                                                                                \hat{k} & v_3 & w_3 \end{bmatrix}\right)                                                                                                                             = \hat{i}(v_2w_3 - v_3w_2) + \hat{j}(v_3w_1 - v_1w_3) + \hat{k}(v_1w_2 - v_2w_1)$$
+
+     
 vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 

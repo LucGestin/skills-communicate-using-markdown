@@ -324,6 +324,23 @@ $$ y  =  det (\begin{bmatrix}
       0 & 1
      \end{bmatrix}) = (2)(2) - (0)(4) / (2)(1) - (0)(-1)= 2 $$
 
+$\vec{v}$ is the **Eigen vector** and $\lambda$ is the **Eigen value**
+
+$$ A \vec{v} = \lambda \vec{v} $$
+
+$$ A \vec{v} - \lambda I \vec{v} = 0 $$
+
+$$ I = \begin{bmatrix}
+       1 & 0 & 0 \\
+       0 & 1 & 0 \\
+       0 & 0 & 1 
+     \end{bmatrix}$$
+
+
+$$ (A - \lambda I) \vec{v} = 0 $$
+
+$$ det (A - \lambda I) = 0 $$
+
 vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 

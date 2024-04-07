@@ -286,7 +286,44 @@ $$\begin{bmatrix} v_1 \\
                                                                                                 \hat{j} & v_2 & w_2 \\
                                                                                                 \hat{k} & v_3 & w_3 \end{bmatrix}\right)                                                                                                                             = \hat{i}(v_2w_3 - v_3w_2) + \hat{j}(v_3w_1 - v_1w_3) + \hat{k}(v_1w_2 - v_2w_1)$$
 
-     
+This function is linear :
+
+$$\begin{bmatrix} ? & ? & ? \end{bmatrix} X \begin{bmatrix} x \\
+                                                      y \\
+                                                      z \end{bmatrix} =  det  \left(\begin{bmatrix} x & v_1 & w_1 \\
+                                                                                                y & v_2 & w_2 \\
+                                                                                                z & v_3 & w_3 \end{bmatrix}\right)$$
+
+                                                                                                
+**Cramer's rule**
+
+$$ \begin{bmatrix}
+      2 & -1 \\
+      0 & 1
+     \end{bmatrix} \begin{bmatrix}
+      x \\
+      y
+     \end{bmatrix} = \begin{bmatrix}
+      4 \\
+      2
+     \end{bmatrix} $$
+
+$$ x  =  det (\begin{bmatrix}
+      4 & -1 \\
+      2 & 1
+     \end{bmatrix}) / det (\begin{bmatrix}
+      2 & -1 \\
+      0 & 1
+     \end{bmatrix}) = (4)(1) - (2)(-1) / (2)(1) - (0)(-1)= 3 $$
+
+$$ y  =  det (\begin{bmatrix}
+      2 & 4 \\
+      0 & 2
+     \end{bmatrix}) / det (\begin{bmatrix}
+      2 & -1 \\
+      0 & 1
+     \end{bmatrix}) = (2)(2) - (0)(4) / (2)(1) - (0)(-1)= 2 $$
+
 vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 

@@ -308,21 +308,21 @@ $$ \begin{bmatrix}
       2
      \end{bmatrix} $$
 
-$$ x  =  det (\begin{bmatrix}
+$$ x  = \frac {det (\begin{bmatrix}
       4 & -1 \\
       2 & 1
-     \end{bmatrix}) / det (\begin{bmatrix}
+     \end{bmatrix})} {det (\begin{bmatrix}
       2 & -1 \\
       0 & 1
-     \end{bmatrix}) = (4)(1) - (2)(-1) / (2)(1) - (0)(-1)= 3 $$
+     \end{bmatrix})} = \frac {(4)(1) - (2)(-1)} {(2)(1) - (0)(-1)} = 3 $$
 
-$$ y  =  det (\begin{bmatrix}
+$$ y  =  \frac{det(\begin{bmatrix}
       2 & 4 \\
       0 & 2
-     \end{bmatrix}) / det (\begin{bmatrix}
+     \end{bmatrix})} {det (\begin{bmatrix}
       2 & -1 \\
       0 & 1
-     \end{bmatrix}) = (2)(2) - (0)(4) / (2)(1) - (0)(-1)= 2 $$
+     \end{bmatrix})} = \frac{(2)(2) - (0)(4)} {(2)(1) - (0)(-1)}= 2 $$
 
 $\vec{v}$ is the **Eigen vector** and $\lambda$ is the **Eigen value**
 
@@ -340,6 +340,14 @@ $$ I = \begin{bmatrix}
 $$ (A - \lambda I) \vec{v} = 0 $$
 
 $$ det (A - \lambda I) = 0 $$
+
+**Derivative** is linear :
+
+$$ L(\vec{v} + \vec{w} ) = L \vec{v} + L\vec{w} $$
+
+$$\frac{d}{dx} (x^3 + x^2) = \frac{d}{dx} (x^3) + \frac{d}{dx} (x^2) $$
+
+
 
 vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$

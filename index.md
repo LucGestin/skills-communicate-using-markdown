@@ -41,8 +41,50 @@ A task list :
 
 # Python
 
-**int()**, which turns things into ints
-**float()**, which turns things into floats
+**Data types**:
+```
+* string "Hello World!" or 'Hello World!'
+* int 12
+* float 3.12
+* list \['hello', 12, 3.12]
+* dict {'name': 'Ben', 'age':31 } 
+* tuple (2, 3)
+* range(5)
+* True and False
+```
+
+**Strings** are sequence of characters
+```
+int() to transform string into integer
+float() to transform string into float
+
+
+claims = 'pluto is a planet!'
+words = claims.split
+' 👏 '.join([word.upper() for word in words]) 
+the output is 'PLUTO 👏 IS 👏 A 👏 PLANET!'
+"{}, you'll always be the {}th planet to me.".format(planet, position)
+interpolation print(f"I am {age} years old)
+```
+
+**Integer and Float**
+```
+str() to transform string into integer
+
+10 / 3 equals 3.33
+10 // 3 equals 3
+module operator 10 % 3 equals 0 
+round (12.4)
+```
+
+**Special Values**
+```
+Everything is True, except:
+* None
+* False
+* Empty value. [], {}, '', 0, 0.0, (), range(0)...
+```
+
 **bool()**, which turns things into bools.
 
 **or** used in an expression : The Python docs describe it as **if x is false, then y, else x**
@@ -72,13 +114,11 @@ ACTIVE = 1
 **Lists**, a list can contain a mix of different types of variable
 ```
 dogs = ["Roger", "Syd"]
+
+*list.append** method modifies a list by adding an item to the end
+*list.pop** method removes and returns the last element of a list
+*list.index** method returns its index.
 ```
-the **list.append** method modifies a list by adding an item to the end
-
-the **list.pop** method removes and returns the last element of a list
-
-the **list.index** method returns its index.
-
 
 **Tuples**, immuable group of objects, often used for functions that have multiple return values.
 ```
@@ -94,14 +134,7 @@ union = set1 | set2
 difference = set1 - set2 #{'Syd'}
 isSuperset = set1 > set2 # True
 ```
-**Strings** are sequence of characters
-```
-claims = 'pluto is a planet!'
-words = claims.split
-' 👏 '.join([word.upper() for word in words]) 
-the output is 'PLUTO 👏 IS 👏 A 👏 PLANET!'
-"{}, you'll always be the {}th planet to me.".format(planet, position)
-```
+
 
 **Dictionnaries**, to create collections of key / value pairs.
 ```
@@ -109,6 +142,14 @@ dog = { 'name': 'Roger', 'age': 8 }
 ```
 
 **Objects** : If the object provides methods to change its content, then it's mutable. Otherwise it's immutable.
+
+
+**Ternary operator** if ... else
+```
+value_if_true if condition else value_if_false
+is_nice = True
+state = "nice" if is_nice else "not nice"
+```
 
 **For** loops
 ```

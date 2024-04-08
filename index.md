@@ -347,6 +347,11 @@ $$ L(\vec{v} + \vec{w} ) = L \vec{v} + L\vec{w} $$
 
 $$\frac{d}{dx} (x^3 + x^2) = \frac{d}{dx} (x^3) + \frac{d}{dx} (x^2) $$
 
+**Calculus**
+
+the fundamental theorem of calculus ties together the ideas of integrals and derivatives, each one is the inverse of the other.
+
+$$\frac{dA}{dx} = x^2$$
 
 
 vector multiplication 

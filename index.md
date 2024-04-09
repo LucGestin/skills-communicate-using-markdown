@@ -73,7 +73,7 @@ str() to transform string into integer
 
 10 / 3 equals 3.33
 10 // 3 equals 3
-modulo operator 10 % 3 equals 0 
+% modulo operator, (10 % 3)==0 equals False but (9 % 3)==0 equals True
 round (12.4)
 ```
 
@@ -86,8 +86,6 @@ Everything is True, except:
 
 casting bool() returns True or False.
 ```
-
-
 
 **or** and **and** are the logical OR and AND.
 ```
@@ -115,13 +113,26 @@ ACTIVE = 1
 ```
 dogs = ["Roger", "Syd"]
 
-*list.append** method modifies a list by adding an item to the end
-*list.pop** method removes and returns the last element of a list
-*list.index** method returns its index.
+*dogs.append("Paul") method modifies a list by adding an item to the end
+*dogs.remove("Paul") method removes and returns the last element of a list
+*dogs.pop() method removes and returns the last element of a list
+*list.index("Syd") method returns its index
+*del dogs[0]
+*sorted (dogs) or dogs.sort()
+
+staff = ["Ben", "Alex", "Lucien", "Arthur", "Anne", "Blair", "Sam"]
+for staff_member in staff:
+    print (staff_member)
+for index, staff_member in enumerate(staff):
+    print(f"{index + 1} - {staff_member}")
 ```
 List comprehension
 ```
 squares = [n**2 for n in range(10)]
+upcase_list = [letter.upper() for letter in letters]
+fruits = ['Orange', 'Mango', 'Banana', 'Pineapple', 'Kiwi']
+short_name_fruits = [fruit for fruit in fruits if len(fruit) < 6]
+mixed_case_fruits = [fruit.upper() if len(fruit) < 6 else fruit.lower() for fruit in fruits]
 ```
 
 **Tuples**, immuable group of objects, often used for functions that have multiple return values.

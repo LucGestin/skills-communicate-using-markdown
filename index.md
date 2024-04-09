@@ -412,6 +412,7 @@ the fundamental theorem of calculus ties together the ideas of integrals and der
 
 $$\frac{dA}{dx} = x^2$$
 
+$$\frac{ds}{dt} (t)= \frac {s(t+dt)-s(t)} {dt} when dt-> 0 $$
 
 vector multiplication 
 $$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$

@@ -55,9 +55,9 @@ A task list :
 
 **Strings** are sequence of characters
 ```
-int() to transform string into integer
-float() to transform string into float
-
+Casting:
+*int() to transform string into integer
+*float() to transform string into float
 
 claims = 'pluto is a planet!'
 words = claims.split
@@ -73,7 +73,7 @@ str() to transform string into integer
 
 10 / 3 equals 3.33
 10 // 3 equals 3
-module operator 10 % 3 equals 0 
+modulo operator 10 % 3 equals 0 
 round (12.4)
 ```
 
@@ -83,13 +83,13 @@ Everything is True, except:
 * None
 * False
 * Empty value. [], {}, '', 0, 0.0, (), range(0)...
+
+casting bool() returns True or False.
 ```
 
-**bool()**, which turns things into bools.
 
-**or** used in an expression : The Python docs describe it as **if x is false, then y, else x**
 
-**and** : The Python docs describe it as **if x is false, then x, else y**
+**or** and **and** are the logical OR and AND.
 ```
 print(0 or 1) ## 1
 print(0 and 1) ## 0
@@ -119,6 +119,10 @@ dogs = ["Roger", "Syd"]
 *list.pop** method removes and returns the last element of a list
 *list.index** method returns its index.
 ```
+List comprehension
+```
+squares = [n**2 for n in range(10)]
+```
 
 **Tuples**, immuable group of objects, often used for functions that have multiple return values.
 ```
@@ -134,15 +138,12 @@ union = set1 | set2
 difference = set1 - set2 #{'Syd'}
 isSuperset = set1 > set2 # True
 ```
-
-
 **Dictionnaries**, to create collections of key / value pairs.
 ```
 dog = { 'name': 'Roger', 'age': 8 }
 ```
 
 **Objects** : If the object provides methods to change its content, then it's mutable. Otherwise it's immutable.
-
 
 **Ternary operator** if ... else
 ```
@@ -164,9 +165,26 @@ while i < 10:
    i += 1 # increase the value of i by 1
 ```
 
-**List comprehension**
+
+**code example : is_colorful**
 ```
-squares = [n**2 for n in range(10)]
+def is_colorful(number):
+    # Convert number to a list of digits ==> List comprehension
+    digits = [int(digit) for digit in str(number)]
+
+    # Set to store products of consecutive subsequences
+    products = set()
+
+    # Iterate over the digits to generate all the consecutive subsequences
+    for i in range(len(digits)):
+        product = 1
+        for j in range(i, len(digits)):
+            product *= digits[j]
+            if product in products:
+                return False
+            products.add(product)
+
+    return True
 ```
 
 **Help** function and **docstrings**

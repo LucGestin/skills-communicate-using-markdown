@@ -423,10 +423,25 @@ the fundamental theorem of calculus ties together the ideas of integrals and der
 
 $$\frac{dA}{dx} = x^2$$
 
-$$\frac{ds}{dt} (t)= \frac {s(t+dt)-s(t)} {dt} when dt-> 0 $$
+$$\frac{ds}{dt} (t)= \frac {s(t+dt)-s(t)} {dt} \\ when \\ dt-> 0 $$
 
-vector multiplication 
-$$\[ \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
+$$f(x)= x^2 \\ => \\ \frac{df}{dx} (x) = 2x$$
+
+$$f(x)= x^3 \\ => \\ \frac{df}{dx} (x) = 3x^2$$
+
+$$f(x)= x^4 \\ => \\ \frac{df}{dx} (x) = 4x^3$$
+
+$$f(x)= x^n \\ => \\ \frac{df}{dx} (x) = nx^{n-1}$$
+
+$$f(x)= \frac{1}{x} \\ a.k.a. \\ x^{-1} => \\ \frac{df}{dx} (x) = TBD $$
+
+$$f(x)= \sqrt{x} \\ => \\ \frac{df}{dx} (x) = TBD $$
+
+$$f(x)= \sin\theta \\ => \\ \frac{df}{dx} (x) = \cos\theta$$
+
+vector multiplication
+
+$$\[\vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
 
 $$\(\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}\)$$
 

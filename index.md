@@ -65,6 +65,11 @@ words = claims.split
 the output is 'PLUTO 👏 IS 👏 A 👏 PLANET!'
 "{}, you'll always be the {}th planet to me.".format(planet, position)
 interpolation print(f"I am {age} years old)
+
+roman = 'IVXM'
+for i,v in enumerate(roman): ##i: index , v: character
+        if i not in index_pairs:
+            convertion+=codex[v]
 ```
 
 **Integer and Float**
@@ -121,8 +126,6 @@ dogs = ["Roger", "Syd"]
 *sorted (dogs) or dogs.sort()
 
 staff = ["Ben", "Alex", "Lucien", "Arthur", "Anne", "Blair", "Sam"]
-for staff_member in staff:
-    print (staff_member)
 for index, staff_member in enumerate(staff):
     print(f"{index + 1} - {staff_member}")
 ```
@@ -133,14 +136,18 @@ upcase_list = [letter.upper() for letter in letters]
 fruits = ['Orange', 'Mango', 'Banana', 'Pineapple', 'Kiwi']
 short_name_fruits = [fruit for fruit in fruits if len(fruit) < 6]
 mixed_case_fruits = [fruit.upper() if len(fruit) < 6 else fruit.lower() for fruit in fruits]
+
+def wave(people):
+    return [people[:i] + people[i].upper() + people[i+1:] for i in range(len(people)) if people[i].isalpha()]
 ```
+![image](https://github.com/LucGestin/skills-communicate-using-markdown/assets/164859028/7b6c1eed-969b-463d-9ae6-f058f75f52ff)
 
 **Tuples**, immuable group of objects, often used for functions that have multiple return values.
 ```
 names = ("Roger", "Syd")
 ```
 
-**Sets**, like Tuples but they are not ordered and they are mutable.
+**Sets**, like Tuples but a set is an unordered collection with no duplicate elements, they are mutable.
 ```
 set1 = {"Roger", "Syd"}
 set2 = {"Roger"}
@@ -151,8 +158,33 @@ isSuperset = set1 > set2 # True
 ```
 **Dictionnaries**, to create collections of key / value pairs.
 ```
-dog = { 'name': 'Roger', 'age': 8 }
+london = {
+    "country": "England",
+    "population": 8_982_000,
+    "star_monument": "Big Ben"
+}
+
+london["country"]     #=> "England"
+london["population"]  #=> 8982000
+london['star_monument'] = "Big Ben"
+
+del london['star_monument']
+
+for key, value in london.items():
+    print(f"{key} -> {value}")
+
+london.get('country', "no key country") #=> "England"
+
+students = ['Peter', 'Mary', 'George', 'Emma']
+student_ages = [24, 25, 22, 20]
+for student, age in zip(students, student_ages):
+    print (f'student:{student}, age: {age}')
 ```
+dict comprehension:
+```
+student_ages_dict = {key: value for key, value in zip(students, student_ages)}
+```
+
 
 **Objects** : If the object provides methods to change its content, then it's mutable. Otherwise it's immutable.
 

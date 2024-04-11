@@ -170,8 +170,23 @@ london['star_monument'] = "Big Ben"
 
 del london['star_monument']
 
+for key in london:
+    print(key)
+output:
+country
+population
+
+for value in london.values():
+    print(value)
+output:
+England
+8982000
+
 for key, value in london.items():
     print(f"{key} -> {value}")
+output:
+country -> England
+population -> 8982000
 
 london.get('country', "no key country") #=> "England"
 
@@ -251,6 +266,50 @@ type(rolls)
 dir()
 help()
 ```
+**Object Oriented Programming (OOP)**
+
+Class and Instances
+![image](https://intellipaat.com/mediaFiles/2019/03/python10.png)
+
+```
+class Car:
+    def __init__(self):
+        self.engine_started = False
+
+    def is_engine_started(self):
+        return self.engine_started
+
+    def start_engine(self):
+        self.engine_started = True
+
+my_car = Car()
+my_car.engine_started      #=> False  - Calling the attribute
+my_car.is_engine_started() #=> False  - Calling the method therefore using ()
+my_car.start_engine()      #=> Calling the method, therefore using ()
+my_car.engine_started      #=> True   - Calling the attribute
+
+class Castle:
+  def __init__(self, name, ruler):
+    self.name = name
+    self.ruler = ruler
+
+  def castle_details(self):
+    return f"{self.name} is ruled by {self.ruler_name()}"
+
+  def ruler_name(self):
+    return self.ruler.capitalize()
+
+dragonstone = Castle("Dragonstone", "targaryen")
+dragonstone.castle_details() # => "Dragonstone is ruled by Targaryen"
+```
+
+Summary:
+Everything in Python is an object.
+OOP is about data (or state) and behavior.
+State is stored in instance attributes (self.engine_started)
+Behavior is defined by instance methods (def is_engine_started(self): in the class definition)
+self refers to the instance on which the instance method has been called
+
 
 **Linear Algebra**
 

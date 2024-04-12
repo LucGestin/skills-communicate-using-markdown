@@ -530,15 +530,13 @@ $$f(x)= \sqrt{x} \\ => \\ \frac{df}{dx} (x) = TBD $$
 
 $$f(x)= \sin\theta \\ => \\ \frac{df}{dx} (x) = \cos\theta$$
 
-vector multiplication
+$$sum: \\ \frac{d}{dx} (g(x)+h(x)) => \frac{dg}{dx} + \frac{dh}{dx}$$
 
-$$\[\vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \]$$
+$$product: \\ \frac{d}{dx} (g(x) *h (x)) => g(x) * \frac{dh}{dx} + h(x) * \frac{dg}{dx} (x) \\ a.k.a. Left  d(Right) + Right  d(Left)$$
 
-$$\(\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}\)$$
+$$Composition \\ \frac{d}{dx} (g(h(x)) => \frac{dg}{dx} (h(x)) * \frac{dh}{dx}(x) \\ a.k.a. \\Chain \\ rule$$
 
-$$\(\vec{v} = (v_1, v_2, \ldots, v_n)\)$$
 
-$$\overrightarrow{AB}$$
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+**END**
 
 

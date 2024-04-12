@@ -54,17 +54,29 @@ A task list :
 ```
 
 **Strings** are sequence of characters
-```
+
 Casting:
 *int() to transform string into integer
 *float() to transform string into float
 
+```
 claims = 'pluto is a planet!'
 words = claims.split
 ' 👏 '.join([word.upper() for word in words]) 
 the output is 'PLUTO 👏 IS 👏 A 👏 PLANET!'
 "{}, you'll always be the {}th planet to me.".format(planet, position)
 interpolation print(f"I am {age} years old)
+```
+
+**''.join(reversed(word))** to reverse the letters in a string
+
+```
+def create_phone_number(n):
+	return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+
+def create_phone_number(n):
+    n = ''.join(map(str,n))
+    return '(%s) %s-%s'%(n[:3], n[3:6], n[6:])
 
 roman = 'IVXM'
 for i,v in enumerate(roman): ##i: index , v: character
@@ -118,7 +130,8 @@ ACTIVE = 1
 ```
 dogs = ["Roger", "Syd"]
 
-*dogs.append("Paul") method modifies a list by adding an item to the end
+**dogs.append("Paul")** method for adding an item to the end
+
 *dogs.remove("Paul") method removes and returns the last element of a list
 *dogs.pop() method removes and returns the last element of a list
 *list.index("Syd") method returns its index
@@ -303,12 +316,69 @@ dragonstone = Castle("Dragonstone", "targaryen")
 dragonstone.castle_details() # => "Dragonstone is ruled by Targaryen"
 ```
 
+Chaining:
+In this example, the .arange() method creates a matrix from 1 to 32 with step count of 2, .reshape adjusts the matrix into a 4x4 configuration and .clip is used to set minimum element to 9 and maximum to 25 in the matrix.
+```
+import numpy as np
+# Chaining different methods of numpy
+chained_numpy = np.arange(1, 32, 2).reshape(4, 4).clip(9, 25)
+print(chained_numpy)
+```
 Summary:
-Everything in Python is an object.
-OOP is about data (or state) and behavior.
-State is stored in instance attributes (self.engine_started)
-Behavior is defined by instance methods (def is_engine_started(self): in the class definition)
-self refers to the instance on which the instance method has been called
+* Everything in Python is an object.
+* OOP is about data (or state) and behavior.
+* State is stored in instance attributes (self.engine_started)
+* Behavior is defined by instance methods (def is_engine_started(self): in the class definition)
+* self refers to the instance on which the instance method has been called
+
+Inheritance:
+```
+class Building:
+  def __init__(self, name, width, length):
+    self.name = name
+    self.width = width
+    self.length = length
+
+  def floor_area(self):
+    return self.width * self.length
+
+class Castle(Building):
+    def __init__(self, name, width, length):
+        super().__init__(name, width, length)
+        self.butler = None
+```
+Specific behavior Only a castle may have a butler
+```
+    def has_a_butler(self):
+        return self.butler is not None
+```
+Change an inherited method with the **super** keyword, which calls the parent’s method with the same name.
+```
+    def floor_area(self):
+        return super().floor_area() + 300  # `super` calls `floor_area` of `Building`
+```
+Summary
+* Inheritance is used when classes need to share behavior and properties
+* Subclasses inherit functions and instance attributes from parents
+* On top of that, subclasses can define more instance attributes and functions
+* Use **super()** to access the parent class
+
+Class functions:
+```
+class House:
+  @classmethod
+  def price_per_square_meter(self, city):
+      if city is "Paris":
+          return 9000
+      elif city is "Brussels":
+          return 3000
+      else:
+        return f"No data for {city}"
+
+print(House.price_per_square_meter("Paris")) # => 9000
+```
+* You create a class function if it does not need/is not relevant to a single instance
+* You will use class function more than you define them.
 
 
 **Linear Algebra**

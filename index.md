@@ -604,7 +604,17 @@ $$sum: \\ \frac{d}{dx} (g(x)+h(x)) => \frac{dg}{dx} + \frac{dh}{dx}$$
 
 $$product: \\ \frac{d}{dx} (g(x) *h (x)) => g(x) * \frac{dh}{dx} + h(x) * \frac{dg}{dx} (x) \\ a.k.a. Left  d(Right) + Right  d(Left)$$
 
-$$Composition \\ \frac{d}{dx} (g(h(x)) => \frac{dg}{dx} (h(x)) * \frac{dh}{dx}(x) \\ a.k.a. \\Chain \\ rule$$
+$$Composition: \\ \frac{d}{dx} (g(h(x)) => g(x) * \frac{dh}{dx}(x) \\ a.k.a. \\ Chain \\ rule$$
+
+$$ \frac{d(x^{t})}{dt} => t^{n}$$
+
+$$ \frac{d(e^{ct})}{dt} => c * e^{ct}$$
+
+$$ \frac{d(e^{t})}{dt} => e^{t}$$
+
+$$ 2^{t} = e^{ln(2)t} =>  \frac{d(2^{t})}{dt} => ln(2) * e^{ln(2)t}$$
+
+
 
 
 **END**

@@ -614,8 +614,29 @@ $$ \frac{d(e^{t})}{dt} => e^{t}$$
 
 $$ 2^{t} = e^{ln(2)t} =>  \frac{d(2^{t})}{dt} => ln(2) * e^{ln(2)t}$$
 
+**STATISTICS**
 
+* **mean**, the average
+* **median**, the middle number
+* **mode**, the number that shows up the most
 
+Joint Probability distribution
+
+$$ P(\text{Male} \cap \text{WestWorld}) = 0.2 $$
+
+$$ P(\text{Male} \cup \text{WestWorld}) = 0.51 $$
+
+Marginal probability distribution
+
+Conditional probability distribution
+
+$$ P(\text{A} \mid \text{B}) = \frac{P(\text{A} \cap \text{B})} {P(\text{B})} \\ $$
+
+if independent
+
+$$ P(\text{A} \mid \text{B}) = P(\text{A}) $$
+
+$$ P(\text{A}) \cap P(\text{B}) = P(\text{A}) \times P(\text{B})   $$
 
 **END**
 

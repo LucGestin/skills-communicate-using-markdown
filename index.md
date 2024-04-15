@@ -638,6 +638,32 @@ $$ P(\text{A} \mid \text{B}) = P(\text{A}) $$
 
 $$ P(\text{A}) \cap P(\text{B}) = P(\text{A}) \times P(\text{B})   $$
 
+**Data Types:** 
+* categorical:
+	* nominal: Boston Celtics, Chicago Bulls, Warriors  
+ 	* ordinal : back, center, forward  
+* numerical:  
+	* discrete : 0, 1, 2
+ 	* continuous: 1,92345 (heigth)
+
+**Probability disytribution:**
+* Normal distribution aka the Bell curve
+* Uniform distribution
+* Bi-modal distribution
+* Skewed distribution
+
+**Estimate**
+\theta is in the middle of the 95% confidence interval 
+
+**parameter usage:**
+
+* \mu mean of a numerical variable, \bar{x} for the sample
+* \sigma standard deviation, s for the sample 
+* \pi or \theta proportion of a categorical variable, p for the sample
+* \rho correlation betweeen 2 variables, r for the sample
+* \beta gradient between 2 variables, used in regression, b for the sample
+
+  
 **END**
 
 

@@ -39,6 +39,16 @@ A task list :
 - [ ] Outline my portfolio
 - [ ] Introduce myself to the world
 
+**Ubuntu terminal** 
+
+Flèche du haut: dernière commande run
+Commande L: clean le terminal
+Contrôle U: efface la ligne
+Commande N: nouvelle fenêtre de terminal ??
+Commande T: nouvel onglet terminal ??
+Commande D :  duplique le terminal ??
+Contrôle C : kill la commande ??
+
 # Python
 
 **Data types**:

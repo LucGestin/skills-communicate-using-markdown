@@ -1,10 +1,11 @@
-
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
+# Jupyter notebook
+## Raccourcis clavier
+SHIFT + ENTER :index_vers_la_droite:  exécute la cellule + passe à la cellule suivante
+M :index_vers_la_droite: passe la cellule en markdown
+ENTER :index_vers_la_droite:  passe la cellule en mode édition
+TAB :index_vers_la_droite: affiche la liste des suggestions de variables / méthodes
+SHIFT + TAB :index_vers_la_droite:  affiche la documentation pour une méthode
+A / B :index_vers_la_droite: ajoute une cellule au-dessus / en-dessous
 
 [Search for it!](www.google.com)
 
